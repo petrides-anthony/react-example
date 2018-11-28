@@ -9,12 +9,7 @@ body {
   color: white;
 }
 
-.active {
-  font-weight: bold;
-  color: red;
-}
-
-.inactive {
+.a {
   font-weight: bold;
   color: red;
 }
