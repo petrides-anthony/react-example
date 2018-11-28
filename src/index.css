@@ -6,4 +6,5 @@ body {
 
 .is-active {
   font-weight: bold;
+  color: white;
 }

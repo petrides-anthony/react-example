@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // 1. Add dependencies
 import { 
@@ -75,19 +76,19 @@ class App extends Component {
       <Router>
         {/* Outside the Switch, content added to every page */}
         <div>
-          <ul>
+          <nav class="navbar navbar-dark bg-dark">
             {/* <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/topics">Topics</Link></li> */}
-            <li><NavLink to="/" activeClassName="is-active" exact>Home</NavLink></li>
-            <li><NavLink to="/about" activeClassName="is-active">About</NavLink></li>
-            <li><NavLink to="/topics" activeClassName="is-active">Topics</NavLink></li>
-          </ul>
+            <NavLink to="/" activeClassName="is-active" exact>Home</NavLink>
+            <NavLink to="/about" activeClassName="is-active">About</NavLink>
+            <NavLink to="/examples" activeClassName="is-active">Examples</NavLink>
+          </nav>
           <hr />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/topics" component={Topics} />
+            <Route path="/examples" component={Topics} />
             {/* Without a path, always a match */}
             <Route component={NotFound} />
           </Switch>
