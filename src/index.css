@@ -9,3 +9,17 @@ body {
   color: white;
 }
 
+.active {
+  font-weight: bold;
+  color: red;
+}
+
+.inactive {
+  font-weight: bold;
+  color: red;
+}
+
+ol {
+  font-size: 15px;
+  color: red;
+}

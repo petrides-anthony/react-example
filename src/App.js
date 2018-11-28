@@ -12,7 +12,7 @@ import {
 
 const Home = () => (
   <div>
-    <h2>Home</h2>
+    <h4>Home</h4>
   </div>
 )
 
@@ -21,14 +21,14 @@ const About = (props) => {
   console.log(props);
   return (
     <div>
-      <h2>About</h2>
+      <h4>About</h4>
     </div>
   )
 };
 
 const Topics = ({ match }) => (
   <div>
-    <h2>Topics</h2>
+    <h4>Example Projects</h4>
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>
@@ -85,9 +85,9 @@ class App extends Component {
             <NavLink to="/examples" activeClassName="is-active">Examples</NavLink>
           </nav>
           <ol class="breadcrumb">
-          <NavLink to="/" activeClassName="is-active" exact><li activeClassName="is-active">Home >&nbsp;</li></NavLink>
-          <NavLink to="/about" activeClassName="is-active"><li activeClassName="is-active">&nbsp;About >&nbsp;</li></NavLink>
-          <NavLink to="/examples" activeClassName="is-active"><li activeClassName="is-active">&nbsp;Examples</li></NavLink>
+          <NavLink to="/" activeClassName="is-active" exact><li>Home /&nbsp;</li></NavLink>
+          <NavLink to="/about" activeClassName="is-active"><li>&nbsp;About /&nbsp;</li></NavLink>
+          <NavLink to="/examples" activeClassName="is-active"><li>&nbsp;Examples</li></NavLink>
         </ol>
           <hr />
           <Switch>
