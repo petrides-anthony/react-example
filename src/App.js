@@ -84,6 +84,11 @@ class App extends Component {
             <NavLink to="/about" activeClassName="is-active">About</NavLink>
             <NavLink to="/examples" activeClassName="is-active">Examples</NavLink>
           </nav>
+          <ol class="breadcrumb">
+          <NavLink to="/" activeClassName="is-active" exact><li activeClassName="is-active">Home >&nbsp;</li></NavLink>
+          <NavLink to="/about" activeClassName="is-active"><li activeClassName="is-active">&nbsp;About >&nbsp;</li></NavLink>
+          <NavLink to="/examples" activeClassName="is-active"><li activeClassName="is-active">&nbsp;Examples</li></NavLink>
+        </ol>
           <hr />
           <Switch>
             <Route exact path="/" component={Home} />
